@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics | De Amazing International Group of Schools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { schoolBlue: '#0d3b66', schoolGold: '#f4d35e', schoolDark: '#1a1a1a', schoolLight: '#f8f9fa' } } }
+        }
+    </script>
+</head>
+<body class="bg-schoolLight text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <div>
+                <a href="index.html" class="text-xl sm:text-2xl font-bold text-schoolBlue">De Amazing<span class="text-amber-500"> International</span></a>
+                <p class="text-[9px] sm:text-[10px] text-gray-500 uppercase tracking-widest font-semibold">Group of Schools</p>
+            </div>
+            <nav class="hidden md:flex space-x-8 items-center font-medium">
+                <a href="index.html" class="text-gray-600 hover:text-schoolBlue transition">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-schoolBlue transition">About Us</a>
+                <a href="academics.html" class="text-schoolBlue border-b-2 border-schoolBlue pb-1">Academics</a>
+                <a href="admissions.html" class="text-gray-600 hover:text-schoolBlue transition">Admissions</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-schoolBlue focus:outline-none p-2 rounded-lg hover:bg-gray-100">
+                    <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-inner px-4 pt-2 pb-6 space-y-3 absolute w-full left-0">
+            <a href="index.html" class="block text-gray-700 hover:text-schoolBlue font-medium px-3 py-2 rounded-lg">Home</a>
+            <a href="about.html" class="block text-gray-700 hover:text-schoolBlue font-medium px-3 py-2 rounded-lg">About Us</a>
+            <a href="academics.html" class="block text-schoolBlue font-semibold bg-blue-50 px-3 py-2 rounded-lg">Academics</a>
+            <a href="admissions.html" class="block text-gray-700 hover:text-schoolBlue font-medium px-3 py-2 rounded-lg">Admissions</a>
+        </div>
+    </header>
+
+    <!-- Header Hero banner -->
+    <section class="bg-gradient-to-r from-schoolBlue to-blue-900 text-white py-12 sm:py-16 px-4">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-2xl sm:text-4xl font-extrabold mb-2">Our Comprehensive School Layouts</h1>
+            <p class="text-blue-200 text-xs sm:text-base font-light">Structured tiers created for phased growth and focused learning outcomes.</p>
+        </div>
+    </section>
+
+    <!-- Structural Layout Listing -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-8 sm:space-y-12 w-full">
+        
+        <!-- Tier 1 -->
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100">
+            <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md">Phase 01</span>
+            <h2 class="text-xl sm:text-2xl font-bold text-schoolBlue mt-2 mb-3">Nursery & Early Years Foundation</h2>
+            <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
+                Our nursery program focuses on structured cognitive acceleration, sensory games, early spelling configurations, physical co-ordination, and speech development. We provide a highly protective environment for young children.
+            </p>
+            <div class="flex flex-wrap gap-2 text-[11px] font-semibold text-gray-500">
+                <span class="bg-gray-100 px-3 py-1.5 rounded-md">Montessori Methods</span>
+                <span class="bg-gray-100 px-3 py-1.5 rounded-md">Creative Play</span>
+                <span class="bg-gray-100 px-3 py-1.5 rounded-md">Numeracy Foundations</span>
+            </div>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100">
+            <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md">Phase 02</span>
+            <h2 class="text-xl sm:text-2xl font-bold text-schoolBlue mt-2 mb-3">Primary Education Section</h2>
+            <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
+                The primary tier broadens analytical capacity. Students learn logic, basic agricultural science, introductory coding components, cultural systems, and competitive writing skills based on a robust national curriculum framework.
+            </p>
+            <div class="flex flex-wrap gap-2 text-[11px] font-semibold text-gray-500">
+                <span class="bg-gray-100 px-3 py-1.5 rounded-md">Quantitative Reasoning</span>
+                <span class="bg-gray-100 px-3 py-1.5 rounded-md">Elementary Computing Labs</span>
+                <span class="bg-gray-100 px-3 py-1.5 rounded-md">Public Speaking Drills</span>
+            </div>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100">
+            <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-green-600 bg-green-50 px-2.5 py-1 rounded-md">Phase 03</span>
+            <h2 class="text-xl sm:text-2xl font-bold text-schoolBlue mt-2 mb-3">High School / Secondary College</h2>
+            <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
+                A thorough junior and senior high school system focusing on deep sciences, advanced humanities, and technical arts. Our program prepares students for major milestones including WAEC, NECO, UTME, and international college admissions.
+            </p>
+            <div class="flex flex-wrap gap-2 text-[11px] font-semibold text-gray-500">
+                <span class="bg-gray-100 px-3 py-1.5 rounded-md">WAEC / NECO Excellence Tracks</span>
+                <span class="bg-gray-100 px-3 py-1.5 rounded-md">Advanced Physics & Chemistry</span>
+                <span class="bg-gray-100 px-3 py-1.5 rounded-md">Tech Leadership Camps</span>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-schoolDark text-gray-400 mt-auto pt-12 pb-6 border-t-4 border-schoolBlue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8 text-left">
+            <div>
+                <h4 class="text-white text-lg font-bold mb-3">De Amazing International</h4>
+                <p class="text-sm leading-relaxed">Comprehensive educational mapping engineered to build future-ready African technical scholars and industrial professionals.</p>
+            </div>
+            <div class="sm:pl-4">
+                <h4 class="text-white text-lg font-bold mb-3">Curriculum Navigation</h4>
+                <ul class="space-y-1.5 text-sm">
+                    <li><a href="index.html" class="hover:text-white transition">&rarr; Welcome Dashboard</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">&rarr; History Realization</a></li>
+                    <li><a href="admissions.html" class="hover:text-white transition">&rarr; Admission Management</a></li>
+                </ul>
+            </div>
+            <div class="sm:col-span-2 md:col-span-1">
+                <h4 class="text-white text-lg font-bold mb-3">Support Contacts</h4>
+                <div class="space-y-2.5 text-sm">
+                    <p>📞 Phone Line: <a href="tel:+2348030000000" class="hover:text-white transition">+234 (0) 803 000 0000</a></p>
+                    <p>💬 WhatsApp Help: <a href="https://wa.me/2348030000000" target="_blank" class="text-green-400 hover:underline">Open Live Chat Desk</a></p>
+                    <p>✈️ Telegram Feed: <a href="https://t.me/deamazinginternational" target="_blank" class="text-sky-400 hover:underline">Subscribe for Updates</a></p>
+                    <p>✉️ Inbox: <a href="mailto:admissions@deamazinginternational.com.ng" class="hover:text-white transition break-all">admissions@deamazinginternational.com.ng</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-xs text-gray-600 border-t border-gray-800 pt-6 px-4">
+            &copy; 2026 De Amazing International Group of Schools. Academic standard design logic.
+        </div>
+    </footer>
+
+    <!-- Global Application Logic Entry Point -->
+    <script src="script.js"></script>
+</body>
+</html>

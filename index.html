@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | De Amazing International Group of Schools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        schoolBlue: '#0d3b66',
+                        schoolGold: '#f4d35e',
+                        schoolDark: '#1a1a1a',
+                        schoolLight: '#f8f9fa',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-schoolLight text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Top Alert Notification Bar -->
+    <div class="bg-schoolGold text-schoolDark text-center py-2 px-4 text-xs sm:text-sm font-semibold sticky top-0 z-50 shadow-sm">
+        📢 Admission for the 2026/2027 Academic Session is officially open. <a href="admissions.html" class="underline hover:text-blue-900 ml-1">Apply Now &rarr;</a>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="bg-white shadow-md border-b border-gray-100 sticky top-8 sm:top-9 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <div class="flex-shrink-0">
+                <a href="index.html" class="text-xl sm:text-2xl font-bold text-schoolBlue tracking-tight">
+                    De Amazing<span class="text-amber-500"> International</span>
+                </a>
+                <p class="text-[9px] sm:text-[10px] text-gray-500 tracking-widest uppercase font-semibold">Group of Schools</p>
+            </div>
+            
+            <!-- Desktop Links (Hidden on Mobile) -->
+            <nav class="hidden md:flex space-x-6 lg:space-x-8 items-center font-medium">
+                <a href="index.html" class="text-schoolBlue border-b-2 border-schoolBlue pb-1">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-schoolBlue transition">About Us</a>
+                <a href="academics.html" class="text-gray-600 hover:text-schoolBlue transition">Academics</a>
+                <a href="admissions.html" class="text-gray-600 hover:text-schoolBlue transition">Admissions</a>
+                <a href="admissions.html" class="bg-schoolBlue text-white px-5 py-2.5 rounded-lg hover:bg-opacity-90 shadow-sm transition">Student Portal</a>
+            </nav>
+
+            <!-- Hamburger Button (Visible ONLY on Mobile) -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-schoolBlue focus:outline-none p-2 rounded-lg hover:bg-gray-100">
+                    <!-- Hamburger Icon -->
+                    <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <!-- Close Cross Icon (Hidden by Default) -->
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu Container (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-inner px-4 pt-2 pb-6 space-y-3 absolute w-full left-0">
+            <a href="index.html" class="block text-schoolBlue font-semibold bg-blue-50 px-3 py-2 rounded-lg">Home</a>
+            <a href="about.html" class="block text-gray-700 hover:text-schoolBlue font-medium px-3 py-2 rounded-lg hover:bg-gray-50">About Us</a>
+            <a href="academics.html" class="block text-gray-700 hover:text-schoolBlue font-medium px-3 py-2 rounded-lg hover:bg-gray-50">Academics</a>
+            <a href="admissions.html" class="block text-gray-700 hover:text-schoolBlue font-medium px-3 py-2 rounded-lg hover:bg-gray-50">Admissions</a>
+            <div class="pt-2 border-t border-gray-100">
+                <a href="admissions.html" class="block text-center bg-schoolBlue text-white font-bold py-3 rounded-xl shadow-sm">Student Portal Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Showcase Section -->
+    <section class="relative bg-schoolBlue text-white overflow-hidden py-16 sm:py-24 md:py-32 px-4">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 relative text-center">
+            <span class="bg-blue-900 text-schoolGold text-[11px] sm:text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Welcome to Excellence</span>
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white mt-4 sm:mt-6 mb-6 tracking-tight leading-tight max-w-4xl mx-auto">
+                Nurturing Tomorrow's Global Leaders with <span class="text-schoolGold">Character & Knowledge</span>
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-8 sm:mb-10 font-light">
+                We blend rigorous local and international learning frameworks to give children from Nursery to High School a world-class foundation.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto sm:max-w-none">
+                <a href="admissions.html" class="bg-schoolGold text-schoolDark font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl hover:bg-yellow-400 transition transform hover:-translate-y-0.5 shadow-md text-center text-sm sm:text-base">
+                    Online Admission Form
+                </a>
+                <a href="about.html" class="border border-blue-300 text-white font-medium px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl hover:bg-white hover:text-schoolBlue transition text-center text-sm sm:text-base">
+                    Explore Our History
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions Section -->
+    <section class="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-xl mb-4">🏆</div>
+                <h3 class="text-lg sm:text-xl font-bold text-schoolBlue mb-2">High Academic Standards</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Consistently scoring excellent marks across external certifications including WAEC, NECO, and UTME exams.</p>
+            </div>
+            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-xl mb-4">🔬</div>
+                <h3 class="text-lg sm:text-xl font-bold text-schoolBlue mb-2">Modern Learning Facilities</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Equipped ICT computing hubs, advanced interactive media resources, and functional science labs.</p>
+            </div>
+            <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-xl mb-4">🛡️</div>
+                <h3 class="text-lg sm:text-xl font-bold text-schoolBlue mb-2">Character & Discipline</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Instilling core values, leadership sensibilities, and moral accountability into all students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-schoolDark text-gray-400 mt-auto pt-12 pb-6 border-t-4 border-schoolBlue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8 text-left">
+            <div>
+                <h4 class="text-white text-lg font-bold mb-4">De Amazing International</h4>
+                <p class="text-sm leading-relaxed mb-4">Providing high-tier academic grooming environments across prime standard curricula settings in Nigeria.</p>
+                <p class="text-xs">📍 Lagos Mainland Campus Complex, Nigeria</p>
+            </div>
+            <div class="sm:pl-4 md:pl-8">
+                <h4 class="text-white text-lg font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html" class="hover:text-white transition">&rarr; Our Dynamic Heritage</a></li>
+                    <li><a href="academics.html" class="hover:text-white transition">&rarr; School Sections Setup</a></li>
+                    <li><a href="admissions.html" class="hover:text-white transition">&rarr; Apply for Admissions</a></li>
+                </ul>
+            </div>
+            <div class="sm:col-span-2 md:col-span-1">
+                <h4 class="text-white text-lg font-bold mb-4">Connect With Us</h4>
+                <div class="space-y-3 text-sm">
+                    <p class="flex items-center gap-2">
+                        📞 <a href="tel:+2348030000000" class="hover:text-white transition">+234 (0) 803 000 0000</a>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        💬 <a href="https://wa.me/2348030000000?text=Hello%20De%20Amazing%20International%20Schools" target="_blank" class="text-green-400 hover:text-green-300 transition font-medium">Chat on WhatsApp</a>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        ✈️ <a href="https://t.me/deamazinginternational" target="_blank" class="text-sky-400 hover:text-sky-300 transition font-medium">Join Telegram Channel</a>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        ✉️ <a href="mailto:admissions@deamazinginternational.com.ng" class="hover:text-white transition break-all">admissions@deamazinginternational.com.ng</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-xs text-gray-600 border-t border-gray-800 pt-6 px-4">
+            &copy; 2026 De Amazing International Group of Schools. Developed with modern web configurations.
+        </div>
+    </footer>
+
+    <!-- Global Application Logic Entry Point -->
+    <script src="script.js"></script>
+</body>
+</html>
