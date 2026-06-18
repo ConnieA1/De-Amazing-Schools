@@ -13,13 +13,17 @@
 </head>
 <body class="bg-schoolLight text-gray-800 flex flex-col min-h-screen">
 
-    <!-- Header Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
-            <div>
-                <a href="index.html" class="text-xl sm:text-2xl font-bold text-schoolBlue">De Amazing<span class="text-amber-500"> International</span></a>
-                <p class="text-[9px] sm:text-[10px] text-gray-500 uppercase tracking-widest font-semibold">Group of Schools</p>
-            </div>
+            
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="assets/logo.png" alt="De Amazing International School Logo" class="w-12 h-12 object-contain rounded-md" onerror="this.style.display='none'">
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-bold text-schoolBlue leading-none">De Amazing<span class="text-amber-500"> International</span></h1>
+                    <p class="text-[9px] sm:text-[10px] text-gray-500 uppercase tracking-widest font-semibold mt-1">Group of Schools</p>
+                </div>
+            </a>
+
             <nav class="hidden md:flex space-x-8 items-center font-medium">
                 <a href="index.html" class="text-gray-600 hover:text-schoolBlue transition">Home</a>
                 <a href="about.html" class="text-gray-600 hover:text-schoolBlue transition">About Us</a>
@@ -41,39 +45,39 @@
         </div>
     </header>
 
-    <!-- Narrative Header Banner -->
     <section class="bg-gradient-to-r from-schoolBlue to-blue-900 text-white py-12 px-4">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-2xl sm:text-3xl font-extrabold mb-2">Online Application Processing Registry</h1>
-            <p class="text-blue-200 text-xs sm:text-sm font-light">Please supply correct information about your child to begin processing admission file records.</p>
+            <h1 class="text-2xl sm:text-3xl font-extrabold mb-2">Online Admission Application Portal</h1>
+            <p class="text-blue-200 text-xs sm:text-sm font-light">Please supply accurate details about your child to begin their enrollment process.</p>
         </div>
     </section>
 
-    <!-- Registration Form Box -->
     <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 w-full">
         <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-md border border-gray-100">
-            <h2 class="text-lg font-bold text-schoolBlue mb-6 pb-2 border-b border-gray-100">Student & Guardian Registration Sheet</h2>
+            <h2 class="text-lg font-bold text-schoolBlue mb-6 pb-2 border-b border-gray-100">Student & Guardian Enrollment Form</h2>
             
-            <form action="#" method="POST" class="space-y-5 sm:space-y-6">
+            <form name="school-admissions" method="POST" data-netlify="true" class="space-y-5 sm:space-y-6">
+                <input type="hidden" name="form-name" value="school-admissions" />
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                     <div>
                         <label class="block text-[11px] font-bold uppercase tracking-wider text-gray-600 mb-1.5">First Name of Child *</label>
-                        <input type="text" required class="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
+                        <input type="text" name="child-first-name" required class="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
                     </div>
                     <div>
                         <label class="block text-[11px] font-bold uppercase tracking-wider text-gray-600 mb-1.5">Last Name / Surname *</label>
-                        <input type="text" required class="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
+                        <input type="text" name="child-last-name" required class="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                     <div>
                         <label class="block text-[11px] font-bold uppercase tracking-wider text-gray-600 mb-1.5">Date of Birth *</label>
-                        <input type="date" required class="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
+                        <input type="date" name="child-dob" required class="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
                     </div>
                     <div>
                         <label class="block text-[11px] font-bold uppercase tracking-wider text-gray-600 mb-1.5">Target School Section *</label>
-                        <select required class="w-full border border-gray-200 bg-white rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
+                        <select name="target-class-section" required class="w-full border border-gray-200 bg-white rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
                             <option value="">-- Choose Class Category --</option>
                             <option value="nursery">Nursery / Early Years</option>
                             <option value="primary">Primary Section</option>
@@ -84,66 +88,75 @@
                 </div>
 
                 <div class="pt-4 border-t border-gray-100">
-                    <h3 class="text-xs sm:text-sm font-bold text-schoolBlue uppercase tracking-wider mb-4">Parent / Guardian Contact Coordinates</h3>
+                    <h3 class="text-xs sm:text-sm font-bold text-schoolBlue uppercase tracking-wider mb-4">Parent / Guardian Contact details</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                         <div>
-                            <label class="block text-[11px] font-bold uppercase tracking-wider text-gray-600 mb-1.5">Full Name of Parent *</label>
-                            <input type="text" required class="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
+                            <label class="block text-[11px] font-bold uppercase tracking-wider text-gray-600 mb-1.5">Full Name of Parent/Guardian *</label>
+                            <input type="text" name="parent-full-name" required class="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
                         </div>
                         <div>
-                            <label class="block text-[11px] font-bold uppercase tracking-wider text-gray-600 mb-1.5">Phone Number (WhatsApp Preferable) *</label>
-                            <input type="tel" placeholder="e.g., 08031234567" required class="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
+                            <label class="block text-[11px] font-bold uppercase tracking-wider text-gray-600 mb-1.5">Phone Number (WhatsApp Preferred) *</label>
+                            <input type="tel" name="parent-phone" placeholder="e.g., 08031234567" required class="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
                         </div>
                     </div>
                     <div class="mt-4">
                         <label class="block text-[11px] font-bold uppercase tracking-wider text-gray-600 mb-1.5">Email Address</label>
-                        <input type="email" class="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
+                        <input type="email" name="parent-email" class="w-full border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-schoolBlue text-sm">
                     </div>
                 </div>
 
                 <div class="pt-2">
                     <button type="submit" class="w-full bg-schoolBlue text-white font-bold py-3.5 rounded-xl hover:bg-opacity-95 shadow transition text-sm">
-                        Transmit Registration Dossier &rarr;
+                        Submit Online Application &rarr;
                     </button>
                     <p class="text-center text-[10px] text-gray-400 mt-3">
-                        🔒 Information handled inside this school portal conforms to data protection compliance configurations.
+                        🔒 Information provided inside this application portal is highly secured and conforms to strict student data privacy regulations.
                     </p>
                 </div>
             </form>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-schoolDark text-gray-400 mt-auto pt-12 pb-6 border-t-4 border-schoolBlue">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8 text-left">
             <div>
-                <h4 class="text-white text-lg font-bold mb-3">De Amazing International</h4>
-                <p class="text-sm leading-relaxed">Ensuring transparent, highly protected digital admissions pipelines for prospective guardians nationwide.</p>
+                <div class="flex items-center gap-2 mb-3">
+                    <img src="assets/logo.png" alt="" class="w-8 h-8 object-contain" onerror="this.style.display='none'">
+                    <h4 class="text-white text-lg font-bold">De Amazing International</h4>
+                </div>
+                <p class="text-sm leading-relaxed">Providing streamlined, safe, and modern educational admissions opportunities for prospective families nationwide.</p>
             </div>
             <div class="sm:pl-4">
                 <h4 class="text-white text-lg font-bold mb-3">Information Maps</h4>
                 <ul class="space-y-1.5 text-sm">
-                    <li><a href="index.html" class="hover:text-white transition">&rarr; Portal Gateway</a></li>
+                    <li><a href="index.html" class="hover:text-white transition">&rarr; Welcome Portal</a></li>
                     <li><a href="about.html" class="hover:text-white transition">&rarr; Institutional Identity</a></li>
-                    <li><a href="academics.html" class="hover:text-white transition">&rarr; Academic Tracks</a></li>
+                    <li><a href="academics.html" class="hover:text-white transition">&rarr; Academic Curriculums</a></li>
                 </ul>
             </div>
             <div class="sm:col-span-2 md:col-span-1">
                 <h4 class="text-white text-lg font-bold mb-3">Admissions Support</h4>
-                <div class="space-y-2.5 text-sm">
-                    <p>📞 Phone: <a href="tel:+2348030000000" class="hover:text-white transition">+234 (0) 803 000 0000</a></p>
-                    <p>💬 WhatsApp: <a href="https://wa.me/2348030000000" target="_blank" class="text-green-400 hover:underline">Direct Admission Chat</a></p>
-                    <p>✈️ Telegram: <a href="https://t.me/deamazinginternational" target="_blank" class="text-sky-400 hover:underline">Community Board Feed</a></p>
-                    <p>✉️ Helpdesk: <a href="mailto:admissions@deamazinginternational.com.ng" class="hover:text-white transition break-all">admissions@deamazinginternational.com.ng</a></p>
+                <div class="space-y-3 text-sm">
+                    <p class="leading-relaxed">
+                        📞 Phone Line: <a href="tel:+2347038276126" class="hover:text-white transition font-medium text-gray-300">+234 703 827 6126</a>, <a href="tel:+2349165613413" class="hover:text-white transition font-medium text-gray-300">+234 916 561 3413</a>
+                    </p>
+                    <p>
+                        💬 WhatsApp Help: <a href="https://wa.me/2349165613413?text=Hello%20De%20Amazing%20International%20Schools" target="_blank" class="text-green-400 hover:underline font-semibold">Open Live Chat Desk</a>
+                    </p>
+                    <p>
+                        ✈️ Telegram Feed: <a href="https://t.me/deamazinginternational" target="_blank" class="text-sky-400 hover:underline font-semibold">Subscribe for Updates</a>
+                    </p>
+                    <p class="break-all">
+                        ✉️ Inbox: <a href="mailto:deamazingintlgroupofschools@gmail.com" class="hover:text-white transition font-medium text-gray-300">deamazingintlgroupofschools@gmail.com</a>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="text-center text-xs text-gray-600 border-t border-gray-800 pt-6 px-4">
-            &copy; 2026 De Amazing International Group of Schools. Verified standard application architecture.
+            &copy; 2026 De Amazing International Group of Schools. Secure Form Architecture.
         </div>
     </footer>
 
-    <!-- Global Application Logic Entry Point -->
     <script src="script.js"></script>
 </body>
 </html>

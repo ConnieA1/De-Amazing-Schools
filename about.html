@@ -13,13 +13,17 @@
 </head>
 <body class="bg-schoolLight text-gray-800 flex flex-col min-h-screen">
 
-    <!-- Header Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
-            <div>
-                <a href="index.html" class="text-xl sm:text-2xl font-bold text-schoolBlue">De Amazing<span class="text-amber-500"> International</span></a>
-                <p class="text-[9px] sm:text-[10px] text-gray-500 uppercase tracking-widest font-semibold">Group of Schools</p>
-            </div>
+            
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="assets/logo.png" alt="De Amazing International School Logo" class="w-12 h-12 object-contain rounded-md" onerror="this.style.display='none'">
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-bold text-schoolBlue leading-none">De Amazing<span class="text-amber-500"> International</span></h1>
+                    <p class="text-[9px] sm:text-[10px] text-gray-500 uppercase tracking-widest font-semibold mt-1">Group of Schools</p>
+                </div>
+            </a>
+
             <nav class="hidden md:flex space-x-8 items-center font-medium">
                 <a href="index.html" class="text-gray-600 hover:text-schoolBlue transition">Home</a>
                 <a href="about.html" class="text-schoolBlue border-b-2 border-schoolBlue pb-1">About Us</a>
@@ -41,15 +45,13 @@
         </div>
     </header>
 
-    <!-- Secondary Banner Hero -->
     <section class="bg-gradient-to-r from-schoolBlue to-blue-900 text-white py-12 sm:py-16 px-4">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 text-center">
             <h1 class="text-2xl sm:text-4xl font-extrabold mb-2">Our Dynamic History & Foundations</h1>
-            <p class="text-blue-200 text-xs sm:text-base font-light">Discover the pillars behind our academic excellence tracking metrics.</p>
+            <p class="text-blue-200 text-xs sm:text-base font-light">Discover the foundation behind our lifelong devotion to academic excellence.</p>
         </div>
     </section>
 
-    <!-- Narrative Section -->
     <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-8 sm:space-y-12 w-full">
         <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100">
             <h2 class="text-xl sm:text-2xl font-bold text-schoolBlue mb-4">Our Brief Heritage</h2>
@@ -77,12 +79,14 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-schoolDark text-gray-400 mt-auto pt-12 pb-6 border-t-4 border-schoolBlue">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8 text-left">
             <div>
-                <h4 class="text-white text-lg font-bold mb-3">De Amazing International</h4>
-                <p class="text-sm leading-relaxed">Excellence, character development, and academic resilience metrics defined for global impact standardizations.</p>
+                <div class="flex items-center gap-2 mb-3">
+                    <img src="assets/logo.png" alt="" class="w-8 h-8 object-contain" onerror="this.style.display='none'">
+                    <h4 class="text-white text-lg font-bold">De Amazing International</h4>
+                </div>
+                <p class="text-sm leading-relaxed">Nurturing character, building resilience, and inspiring young leaders for global impact.</p>
             </div>
             <div class="sm:pl-4">
                 <h4 class="text-white text-lg font-bold mb-3">Quick Navigation</h4>
@@ -94,20 +98,27 @@
             </div>
             <div class="sm:col-span-2 md:col-span-1">
                 <h4 class="text-white text-lg font-bold mb-3">Instant Contact Channels</h4>
-                <div class="space-y-2.5 text-sm">
-                    <p>📞 Phone: <a href="tel:+2348030000000" class="hover:text-white transition">+234 (0) 803 000 0000</a></p>
-                    <p>💬 WhatsApp: <a href="https://wa.me/2348030000000" target="_blank" class="text-green-400 hover:underline">Message Admissions Desk</a></p>
-                    <p>✈️ Telegram: <a href="https://t.me/deamazinginternational" target="_blank" class="text-sky-400 hover:underline">Join School Channel</a></p>
-                    <p>✉️ Email: <a href="mailto:admissions@deamazinginternational.com.ng" class="hover:text-white transition break-all">admissions@deamazinginternational.com.ng</a></p>
+                <div class="space-y-3 text-sm">
+                    <p class="leading-relaxed">
+                        📞 Phone Line: <a href="tel:+2347038276126" class="hover:text-white transition font-medium text-gray-300">+234 703 827 6126</a>, <a href="tel:+2349165613413" class="hover:text-white transition font-medium text-gray-300">+234 916 561 3413</a>
+                    </p>
+                    <p>
+                        💬 WhatsApp Help: <a href="https://wa.me/2349165613413?text=Hello%20De%20Amazing%20International%20Schools" target="_blank" class="text-green-400 hover:underline font-semibold">Open Live Chat Desk</a>
+                    </p>
+                    <p>
+                        ✈️ Telegram Feed: <a href="https://t.me/deamazinginternational" target="_blank" class="text-sky-400 hover:underline font-semibold">Subscribe for Updates</a>
+                    </p>
+                    <p class="break-all">
+                        ✉️ Inbox: <a href="mailto:deamazingintlgroupofschools@gmail.com" class="hover:text-white transition font-medium text-gray-300">deamazingintlgroupofschools@gmail.com</a>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="text-center text-xs text-gray-600 border-t border-gray-800 pt-6 px-4">
-            &copy; 2026 De Amazing International Group of Schools. Consistent standard implementation.
+            &copy; 2026 De Amazing International Group of Schools. All rights reserved.
         </div>
     </footer>
 
-    <!-- Global Application Logic Entry Point -->
     <script src="script.js"></script>
 </body>
 </html>
