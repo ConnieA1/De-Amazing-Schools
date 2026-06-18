@@ -56,7 +56,7 @@
         <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-md border border-gray-100">
             <h2 class="text-lg font-bold text-schoolBlue mb-6 pb-2 border-b border-gray-100">Student & Guardian Enrollment Form</h2>
             
-            <form name="school-admissions" method="POST" data-netlify="true" action="/index.html" onsubmit="alert('Thank you! Your admission application has been successfully submitted. We will contact you shortly.');" class="space-y-5 sm:space-y-6">
+            <form id="admissionForm" name="school-admissions" method="POST" data-netlify="true" action="/index.html" class="space-y-5 sm:space-y-6">
                 <input type="hidden" name="form-name" value="school-admissions" />
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
@@ -158,5 +158,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.getElementById('admissionForm').addEventListener('submit', function(event) {
+            alert("Thank you! Your admission application has been successfully submitted. We will contact you shortly.");
+        });
+    </script>
 </body>
 </html>
